@@ -8,6 +8,6 @@ COPY build/client/main     /usr/share/nginx/downloads/linux/main
 COPY build/client/main.exe /usr/share/nginx/downloads/windows/main.exe
 
 # nginx 설정 복사
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY default.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 8088
