@@ -11,4 +11,6 @@ COPY build/client/main.exe   /usr/share/nginx/client/DirectP2P_Agent_Win_x64.exe
 # nginx 설정 복사
 COPY default.conf /etc/nginx/conf.d/default.conf
 
+VOLUME ["/app/data"]
+
 EXPOSE 8088

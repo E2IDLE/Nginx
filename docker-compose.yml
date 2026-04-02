@@ -5,6 +5,8 @@ services:
       dockerfile: server/Dockerfile
     expose:
       - "80"
+    volumes:
+      - ./data:/app/data
   nginx:
     build:
       context: .
