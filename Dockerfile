@@ -1,7 +1,7 @@
 FROM nginx:alpine
 
 # 프론트 정적 파일 복사
-COPY front/ /usr/share/nginx/html/
+COPY build/front/ /usr/share/nginx/html/
 
 # 클라이언트 바이너리 복사
 COPY build/client/main     /usr/share/nginx/downloads/linux/main
