@@ -1,6 +1,5 @@
 services:
   server:
-    privileged: true
     build:
       context: .
       dockerfile: server/Dockerfile
